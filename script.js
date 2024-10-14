@@ -52,7 +52,7 @@ btn.addEventListener('click', function() {
 function takeCommand(message){
     voice.style.display="none"
      btn.style.display="flex"
-     if(message.includes("hello")||message.includes("hey")||message.includes("hi")||message.includes("vani")||message.includes("name")){
+     if(message.includes("hello")||message.includes("hey")||message.includes("hi")){
         speak("hello sir,i am vani ,what can i help you?")
      }
      else if(message.includes("who are you")||message.includes("hu r u")||message.includes("created")||message.includes("create")||message.includes("who you are")){
