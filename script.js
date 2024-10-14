@@ -41,7 +41,6 @@ recognition.onresult=((event)=>{
     let transcript=event.results[currentIndex][0].transcript
     content.innerText=transcript
     console.log(event);
-    
    takeCommand(transcript.toLowerCase())
 
 })
@@ -49,15 +48,15 @@ btn.addEventListener('click', function() {
     recognition.start()
      voice.style.display="block"
     btn.style.display="none"
-});
+})
 function takeCommand(message){
     voice.style.display="none"
      btn.style.display="flex"
-     if(message.includes("hello")||message.includes("hey")||message.includes("hi")||message.includes("vani")){
-         speak("hello sir,i am vani ,what can i help you?")
+     if(message.includes("hello")||message.includes("hey")||message.includes("hi")||message.includes("vani")||message.includes("name")){
+        speak("hello sir,i am vani ,what can i help you?")
      }
      else if(message.includes("who are you")||message.includes("hu r u")||message.includes("created")||message.includes("create")||message.includes("who you are")){
-         speak("i am virtual assistant ,created by Shivanshu Sir")
+        speak("i am virtual assistant ,created by Shivanshu Sir")
      }
      else if(message.includes("banaya")||message.includes("kisne")||message.includes("tujhe")){
         speak("mujhe Shivanshu Sir ne banaya hai")
@@ -66,17 +65,15 @@ function takeCommand(message){
         speak("sorry mai sirf shivanshu sir ki freind hu mujhe unse permission leni hogi")
     }
     
-     else if(message.includes("birth")||message.includes("date of birth")||message.includes("birthday")){
+    else if(message.includes("birth")||message.includes("date of birth")||message.includes("birthday")){
         speak("4 june 2024")
     }
-    
-     else if(message.includes("bani")||message.includes("nani")||message.includes("pani")|message.includes("Shivani")){
+    else if(message.includes("bani")||message.includes("nani")||message.includes("pani")|message.includes("Shivani")){
         speak("Sorry sir! My name is Vani")
     } 
     else if(message.includes("number")||message.includes("sakte")){
         speak("mujhe number dene se mna kiya gyaaa haei")
     } 
-
      else if(message.includes("open youtube")||message.includes("youtube")){
          speak("opening youtube...")
          window.open("https://youtube.com/","_blank")
@@ -125,7 +122,7 @@ function takeCommand(message){
          let date=new Date().toLocaleString(undefined,{day:"numeric",month:"short",year:"numeric"})
          speak(date)
        }
-       if (message.includes("open calendar") || message.includes("calendar")) {
+      else if (message.includes("open calendar") || message.includes("calendar")) {
         speak("Opening Google Calendar...");
         window.open("https://calendar.google.com/", "_blank");
     }
@@ -379,10 +376,6 @@ function takeCommand(message){
         speak("Checking the current gold price...");
         window.open("https://www.google.com/search?q=gold+price", "_blank");
     }
-    else if (message.includes("set workout reminder") || message.includes("workout reminder")) {
-        speak("Setting a workout reminder...");
-        // Add reminder logic here
-    }
     else if (message.includes("open imdb") || message.includes("imdb")) {
         speak("Opening IMDb...");
         window.open("https://www.imdb.com/", "_blank");
@@ -500,10 +493,6 @@ function takeCommand(message){
         speak("Searching for flight prices...");
         window.open("https://www.google.com/flights", "_blank");
     }
-    else if (message.includes("set reminder") || message.includes("reminder")) {
-        speak("Setting a reminder...");
-        // Add reminder logic here
-    }
     else if (message.includes("open microsoft teams") || message.includes("teams")) {
         speak("Opening Microsoft Teams...");
         window.open("https://teams.microsoft.com/", "_blank");
@@ -587,13 +576,12 @@ function takeCommand(message){
     else if (message.includes("check stock prices") || message.includes("stock market")) {
         speak("Checking stock prices...");
         window.open("https://www.google.com/search?q=stock+prices", "_blank");
+    }else{
+        let finalText="this is what i found on internet regarding" + message.replace("vani","") || message.replace("vani","")
+        speak(finalText)
+        window.open(`https://www.google.com/search?q=${message.replace("vani","")}`,"_blank")
     }
-
-     else{
-         let finalText="this is what i found on internet regarding" + message.replace("vani","") || message.replace("vani","")
-         speak(finalText)
-         window.open(`https://www.google.com/search?q=${message.replace("vani","")}`,"_blank")
-     }
+     
      setTimeout(function(){
         content.innerHTML="What More Can i Help You"
      },7000)

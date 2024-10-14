@@ -66,6 +66,7 @@ cursor: pointer;
         text-align: center;
         font-size: 4vmax;
         -webkit-text-stroke: 1px grey;
+        padding: 1vmax;
 
     }
     #logo{
