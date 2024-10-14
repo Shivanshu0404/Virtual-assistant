@@ -46,8 +46,16 @@ recognition.onresult=((event)=>{
 })
 btn.addEventListener('click', function() {
     recognition.start()
-     voice.style.display="block"
+     
+    voice.style.display="block"
     btn.style.display="none"
+     
+    const voiceof=function () {
+    voice.style.display="none"
+    btn.style.display="flex"
+    }
+     
+    setTimeout(voiceof,7000)
 })
 function takeCommand(message){
     voice.style.display="none"
