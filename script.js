@@ -63,7 +63,7 @@ function takeCommand(message){
         speak("mujhe Shivanshu Sir ne banaya hai")
     }
     else if(message.includes("banoge")||message.includes("friend")){
-        speak("sorry mai sirf shivanshu sir ki freind hu mujhe unse puchna padega")
+        speak("sorry mai sirf shivanshu sir ki freind hu mujhe unse permission leni hogi")
     }
     
      else if(message.includes("birth")||message.includes("date of birth")||message.includes("birthday")){
