@@ -79,9 +79,250 @@ function takeCommand(message){
     else if(message.includes("bani")||message.includes("nani")||message.includes("pani")|message.includes("Shivani")){
         speak("Sorry sir! My name is Vani")
     } 
+    else if(message.includes("introduction") || message.includes("introduce") || message.includes("intro")) {
+        // First chunk of the introduction
+        speak("Hello! I am your virtual assistant created by Shivanshu Sir.");
+        
+        // Second chunk after 7 seconds (based on estimated speaking time)
+        setTimeout(() => {
+            speak("I can assist you with various tasks like answering your questions, opening websites, providing information, and much more.");
+        }, 7000); // 7 seconds delay
+        
+        // Third chunk after 15 seconds
+        setTimeout(() => {
+            speak("I'm designed to make your life easier by helping you with whatever you need. I'm fluent in both Hindi and English, so feel free to ask me anything in the language you're comfortable with.");
+        }, 15000); // 8 seconds delay for smoother flow
+        
+        // Fourth chunk after 27 seconds
+        setTimeout(() => {
+            speak("As for my creator, Shivanshu Sir is a talented individual studying in his final year of BCA at Tulas Institute.");
+        }, 27000); // 12 seconds delay for longer chunk
+        
+        // Fifth chunk after 35 seconds
+        setTimeout(() => {
+            speak("He has a wide range of skills, including C, C plus plus, HTML, CSS, JavaScript, SQL, and more.");
+        }, 35000); // 8 seconds delay
+        
+        // Sixth chunk after 43 seconds
+        setTimeout(() => {
+            speak("He has also worked on projects related to AI chatbots, virtual assistants, and a cricket website.");
+        }, 43000); // 8 seconds delay
+        
+        // Seventh chunk after 51 seconds
+        setTimeout(() => {
+            speak("Shivanshu Sir has a strong academic background, scoring 87.5% in his 12th grade and 82% in his 10th.");
+        }, 51000); // 8 seconds delay
+        
+        // Eighth chunk after 60 seconds
+        setTimeout(() => {
+            speak("Apart from academics, he actively participates in cricket and excels in communication, problem-solving, and team collaboration.");
+        }, 60000); // 9 seconds delay
+        
+        // Final chunk after 70 seconds
+        setTimeout(() => {
+            speak("If you ever want to know more about my capabilities or how I can assist you, just ask! I'm always here to help.");
+        }, 70000); // 10 seconds delay
+    }
+    else if(message.includes("parichay") || message.includes("intro") || message.includes("parichit")) {
+        // First chunk of the introduction
+        speak("Namaste! Main aapki virtual assistant hoon, jise Shivanshu Sir ne banaya hai.");
+        
+        // Second chunk after 7 seconds
+        setTimeout(() => {
+            speak("Main aapki madad kar sakti hoon, jaise sawalon ke jawab dena, websites kholna, jaankari dena aur bhi kai kaam karna.");
+        }, 7000); // 6 seconds delay
+        
+        // Third chunk after 15 seconds
+        setTimeout(() => {
+            speak("Main aapke jeevan ko aasan banane ke liye tayar ki gayi hoon, aur aapko jo bhi zarurat ho, usme madad kar sakti hoon. Main Hindi aur Angrezi dono bhashaon mein baat kar sakti hoon, isliye jo bhasha aapko suvidha janak lage, usmein sawal ");
+        }, 15000); // 8 seconds delay for smoother flow
+        
+        // Fourth chunk after 27 seconds
+        setTimeout(() => {
+            speak("  usmein sawal  pooche ,Mere rachayita Shivanshu Sir ek pratibhashali vyakti hain, jo apne BCA ke antim varsh mein hain, Tulas Institute se.");
+        }, 30000); // 12 seconds delay for longer chunk
+        
+        // Fifth chunk after 35 seconds
+        setTimeout(() => {
+            speak("Unhone kai skills haasil kiye hain, jaise C, C plus plus, HTML, CSS, JavaScript, SQL, aur aur bhi kai.");
+        }, 40000); // 8 seconds delay
+        
+        // Sixth chunk after 43 seconds
+        setTimeout(() => {
+            speak("Shivanshu Sir ne AI chatbot, virtual assistant aur ek cricket website ke projects par bhi kaam kiya hai.");
+        }, 51000); // 8 seconds delay
+        
+        // Seventh chunk after 51 seconds
+        setTimeout(() => {
+            speak("Shivanshu Sir ka academic pradarshan bhi shandar raha hai, unhone baarvi mein 87.5 pratishat aur dasvi mein 82 pratishat prapt kiye.");
+        }, 59000); // 8 seconds delay
+        
+        // Eighth chunk after 60 seconds
+        setTimeout(() => {
+            speak("Padhai ke alawa, wo cricket mein bhi sakriy hain, aur samvaad kaushalon, samasya samadhan aur team ke saath kaam karne mein bhi nipun hain.");
+        }, 70000); // 9 seconds delay
+        
+        // Final chunk after 70 seconds
+        setTimeout(() => {
+            speak("Agar aapko kabhi meri kshamtaon ke baare mein aur jaan na ho, ya koi madad chahiye, to aap pooch sakte hain! Main hamesha yahaan hoon madad ke liye.");
+        }, 80000); // 10 seconds delay
+    }
+    
+    
     else if(message.includes("number")||message.includes("sakte")){
         speak("mujhe number dene se mna kiya gyaaa haei")
     } 
+    else if(message.includes("namaste") || message.includes("pranam") || message.includes("namaskar")){
+        speak("Namaste! Aap kaise hain?")
+    }
+    else if(message.includes("kaise ho") || message.includes("kaise hain") || message.includes("kaise hai")){
+        speak("Main theek hoon, aap kaise hain?")
+    }
+    else if(message.includes("kya haal hai") || message.includes("kya chal raha hai") || message.includes("kya haal")){
+        speak("Sab theek chal raha hai, aap batao!")
+    }
+    else if(message.includes("shubh prabhat") || message.includes("good morning")){
+        speak("Shubh Prabhat! Aapka din mangalmay ho!")
+    }
+    else if(message.includes("shubh sandhya") || message.includes("good evening")){
+        speak("Shubh Sandhya! Aapka shaam sukhad ho!")
+    }
+    else if(message.includes("shubh raatri") || message.includes("good night")){
+        speak("Shubh Raatri! Aapko meetha sapna aaye!")
+    }
+    else if(message.includes("kya kar rahe ho") || message.includes("kya kar rahi ho") || message.includes("kar rahe ho")){
+        speak("Main aapki madad karne ke liye yahan hoon!")
+    }
+    else if(message.includes("theek ho") || message.includes("theek hai")){
+        speak("Haan, main bilkul theek hoon!")
+    }
+    else if(message.includes("chalo") || message.includes("chalein")){
+        speak("Haan, chalo shuru karte hain!")
+    }
+    else if(message.includes("shukriya") || message.includes("dhanyavaad")){
+        speak("Aapka swagat hai!")
+    }
+    else if(message.includes("madad chahiye") || message.includes("help karo") || message.includes("madad karo")){
+        speak("Bataiye, main kis tarah se madad kar sakti hoon?")
+    }
+    else if(message.includes("aap kaun ho") || message.includes("tum kaun ho") || message.includes("kaun ho")){
+        speak("Main aapka sahayak hoon, mujhe Shivanshu Sir ne banaya hai.")
+    }
+    else if(message.includes("kya kar sakte ho") || message.includes("tum kya karte ho")){
+        speak("Main aapki madad ke liye tayyar hoon, bas aap mujhe puchiye.")
+    }
+    else if(message.includes("samay kya hai") || message.includes("time kya hai")){
+        speak("Abhi ka samay hai " + new Date().toLocaleTimeString())
+    }
+    else if(message.includes("aaj ki taareekh kya hai") || message.includes("date kya hai")){
+        speak("Aaj ki taareekh hai " + new Date().toLocaleDateString())
+    }
+    else if(message.includes("pani lao") || message.includes("pani chahiye")){
+        speak("Mujhe maaf kariye, main aapko sirf madad kar sakti hoon!")
+    }
+    else if(message.includes("bhookh lagi hai") || message.includes("khaana do")){
+        speak("Aapko kya pasand hai? Aap batao!")
+    }
+    else if(message.includes("kya tum sun sakte ho") || message.includes("tum sun rahe ho")){
+        speak("Haan, main sun rahi hoon.")
+    }
+    else if(message.includes("tumhara naam kya hai") || message.includes("naam batao")){
+        speak("Mera naam Shivanshu Assistant hai.")
+    }
+    else if(message.includes("mujhe thoda batao") || message.includes("kuchh batao")){
+        speak("Main aapko kaise madad kar sakti hoon? Puchiye!")
+    }
+    else if(message.includes("dost bano") || message.includes("dosti karoge")){
+        speak("Bilkul! Main aapki dost hoon.")
+    }
+    else if(message.includes("tumhara janm kab hua") || message.includes("janmdin kab hai")){
+        speak("Mera janm Shivanshu Sir ne kiya hai, unke project ke madhyam se.")
+    }
+    else if(message.includes("ghar kahan hai") || message.includes("tumhara ghar kahan hai")){
+        speak("Mera ghar internet hai, aur main aapke saath hoon.")
+    }
+    else if(message.includes("phone chahiye") || message.includes("mobile number do")){
+        speak("Mujhe khed hai, lekin main personal details nahi de sakti.")
+    }
+    else if(message.includes("kya tum insaan ho") || message.includes("tum kya ho")){
+        speak("Main ek virtual assistant, hoon, aapke kaam aane ke liye.")
+    }
+    else if(message.includes("mujhe help chahie") || message.includes("mujhe madad karo")){
+        speak("Bilkul! Aapko kis baare mein madad chahiye?")
+    }
+    else if(message.includes("acha lagta hai") || message.includes("tum achhe ho")){
+        speak("Dhanyavaad! Aap bhi bahut achhe hain.")
+    }
+    else if(message.includes("kahan se ho") || message.includes("tumhare baare mein batao")){
+        speak("Main ek Virtual Assistant  hoon, aur Shivanshu Sir ne mujhe banaya hai.")
+    }
+    else if(message.includes("internet khol do") || message.includes("web search karo")){
+        speak("Kya aap mujhe koi specific website ya query batayenge?")
+    }
+    else if(message.includes("koi mazaak sunao") || message.includes("joke sunao")){
+        speak("Yeh suno: Ek programmer ne kaha, 'Meri wife ne mujhse kaha, ya toh coding chhodo ya mujhe, aur main abhi tak code compile kar raha hoon!'")
+    }
+    else if(message.includes("khush ho") || message.includes("tumhe khushi milati hai")){
+        speak("Haan, jab main aapki madad kar pati hoon toh mujhe khushi hoti hai!")
+    }
+    else if(message.includes("tumhari yaadashth achhi hai") || message.includes("yad rakhte ho")){
+        speak("Main aapke kai sawalon ka jawab yaad rakh sakti hoon!")
+    }
+    else if(message.includes("tumhara kaam kya hai") || message.includes("tum kya karte ho")){
+        speak("Mera kaam aapko sahayta pradan karna hai, jitni jaldi ho sake.")
+    }
+    else if(message.includes("bore ho") || message.includes("tumhen bor hota hai")){
+        speak("Main kabhi bore nahi hoti, main hamesha madad ke liye tayyar hoon!")
+    }
+    else if(message.includes("tumhara favourite khana kya hai") || message.includes("pasandida khana")){
+        speak("Main khaana nahi khati, par aapka pasandida khana kya hai?")
+    }
+    else if(message.includes("tumhe kaise banaaya gaya") || message.includes("banane wala kaun hai")){
+        speak("Mujhe Shivanshu Sir ne apne project ke roop mein banaya hai.")
+    }
+    else if(message.includes("tumhen kaisi jindagi pasand hai") || message.includes("tumhara jivan kaisa hai")){
+        speak("Mujhe khushi milti hai jab main aapki madad kar sakti hoon.")
+    }
+    else if(message.includes("dosti karoge") || message.includes("friend banoge")){
+        speak("Haan, hum dost ban sakte hain!")
+    }
+    else if(message.includes("tumko kya pasand hai") || message.includes("tumhe kya accha lagta hai")){
+        speak("Mujhe aapki madad karna accha lagta hai!")
+    }
+    else if(message.includes("computer kaise kaam karta hai") || message.includes("computer kya hai")){
+        speak("Computer ek electronic machine hai jo instructions ko process karke output deta hai.")
+    }
+    else if(message.includes("duniya ka sabse tez kya hai") || message.includes("fastest thing kya hai")){
+        speak("Roshni ki gati duniya ki sabse tez cheez hai.")
+    }
+    else if(message.includes("tumhare pass kitna gyan hai") || message.includes("tum kitna jaante ho")){
+        speak("Main internet aur Shivanshu Sir ki di gayi jaankari ke madhyam se kaafi kuchh seekh sakti hoon.")
+    }
+    else if(message.includes("sach kya hai") || message.includes("truth kya hai")){
+        speak("Sach wahi hai jo asliyat mein ghatit hota hai.")
+    }
+    else if(message.includes("mujhe pasand ho") || message.includes("tum acchi ho")){
+        speak("Dhanyavaad! Main bhi aapko pasand karti hoon.")
+    }
+    else if(message.includes("chhutti ka kab hai") || message.includes("holiday kab hai")){
+        speak("Aap apne calendar check kar sakte hain ya kisi specific tareekh ke baare mein poochh sakte hain.")
+    }
+    else if(message.includes("poochhna hai") || message.includes("sawal hai")){
+        speak("Aapko kya poochhna hai? Main sun rahi hoon.")
+    }
+    else if(message.includes("tumhara dimaag kaise kaam karta hai") || message.includes("sochti kaise ho")){
+        speak("Mujhe JS algorithms aur programming ke zariye Jawab Dene ka tareeqa sikhaya gaya hai.")
+    }
+    else if(message.includes("tumko sikhaya kisne") || message.includes("sikha kisne")){
+        speak("Shivanshu Sir ne mujhe seekhaya aur design kiya hai.")
+    }
+    else if(message.includes("jindagi ka matlab kya hai") || message.includes("life ka meaning kya hai")){
+        speak("Zindagi ka matlab sabke liye alag hota hai, lekin aapke safalta aur khushi ke liye mehnat karna zaroori hota hai.")
+    }
+    else if(message.includes("tum kitne samay se ho") || message.includes("tum kab aaye")){
+        speak("Main tab se hoon jab Shivanshu Sir ne mujhe banaya, aur tab se main aapke saath hoon.")
+    }
+    
      else if(message.includes("open youtube")||message.includes("youtube")){
          speak("opening youtube...")
          window.open("https://youtube.com/","_blank")
